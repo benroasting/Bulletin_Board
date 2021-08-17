@@ -1,0 +1,19 @@
+
+<hr/>
+
+<h1>Hello {{FirstName}} {{LastName}}! </h1>
+<h3>Username: {{Username}}</h3>
+
+<hr/>
+
+<h3>Posts</h3>
+{{!-- posts users have written --}}
+<ul>{{#each Posts}}
+<h3 id="posts">{{PostTitle}}:<br>
+ {{PostBody}}</h3> 
+<form action="/posts/delete/{{PostId}}" method="POST">
+<button id="button"  type="submit">Delete</button>
+<a href='/posts/{{PostId}}'>Edit</a> 
+</form>
+{{/each}}</ul>
+

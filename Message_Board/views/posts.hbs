@@ -1,0 +1,32 @@
+<hr />
+
+<h1>Post Something to Your Bulletin Board!</h1>
+
+<form method="POST" action="/posts">
+    <div id="title">
+        <label for="PostTitle">Title: </label>
+        <input type="text" name="PostTitle" required>
+    </div>
+    <div id="body">
+        <label for="PostBody">Body: </label>
+        <input type="text" name="PostBody" required>
+    </div><br>
+    <div id="submit">
+        <button id="button"  type="submit">Submit</button>
+    </div>
+</form>
+
+<hr />
+
+<h3>Posts</h3>
+
+<ul>{{#each posts}}
+    <h3 id="posts">{{PostTitle}}:<br>
+        {{PostBody}}</h3>
+    <form action="/posts/delete/{{PostId}}" method="POST">
+    <button id="button" type="submit">Delete</button>
+    <a href="/posts/{{PostId}}">Edit</a>
+    </form>
+    {{/each}}
+</ul>
+

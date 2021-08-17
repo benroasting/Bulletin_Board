@@ -1,0 +1,15 @@
+<hr/>
+
+<form method="POST" action="/posts/editPost/{{posts.PostId}}">
+    <div id="title">
+        <label for="PostTitle">Title: </label>
+        <input value="{{posts.PostTitle}}" type="text" name="PostTitle" required>
+    </div>
+    <div id="body">
+        <label for="PostBody">Body: </label>
+        <input value="{{posts.PostBody}}" type="text" name="PostBody" required>
+    </div>
+    <div id="submit">
+        <button id="button" type="submit">Submit</button>
+    </div>
+</form>

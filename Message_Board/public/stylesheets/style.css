@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Quicksand", Helvetica, Arial, sans-serif;
+  background-color: rgb(237, 226, 169);
+}
+#button {
+  font: "Quicksand", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  font: "Quicksand", Helvetica, Arial, sans-serif;
+}
+
+#username {
+  padding-left: 20px;
+  padding-bottom: 3px;
+}
+
+#password {
+  padding-left: 20px;
+}
+
+#title {
+  padding-left: 20px;
+  padding-bottom: 3px;
+}
+#body {
+  padding-left: 20px;
+
+}
+
+#submit {
+  padding-left: 20px; 
+}
+
+#posts {
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
+  margin: 5px;
+  padding: 10px;
+  width: 400px;
+  height: 50px;
+  color: rgb(101, 101, 101);
+  text-align: center;
+}

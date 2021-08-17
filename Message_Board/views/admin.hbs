@@ -1,0 +1,13 @@
+
+<hr/>
+
+<ul>{{#each users}}
+<h2>{{UserId}}. {{FirstName}} {{LastName}}</h2> 
+<form action="/users/admin/delete/{{UserId}}" method="POST">
+<button id="button" type="submit">Delete</button>
+<a href="/users/admin/editUser/{{UserId}}">View</a>
+</form>
+{{/each}}</ul>
+
+
+
